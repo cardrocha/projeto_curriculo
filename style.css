@@ -5,11 +5,15 @@ body {
   line-height: 1.6; 
   margin: 0; 
   padding: 0; 
+  max-width: 1028px;
+  margin: 0 auto;
 }
 
 /* Estilização do Perfil */
 .perfil {
-  background-color: #ffffff; 
+  background-image: 
+    linear-gradient(#0000ff80 40%, #ff000080),
+    url(./img//code.jpg);
   padding: 30px 20px; 
   margin: 20px; 
   text-align: center; 
@@ -27,19 +31,22 @@ body {
 }
 
 .perfil h1 {
-  color: #333; 
-  font-size: 2em;
+  color: #ffffff;
+  font-size: 2.5em;
   margin: 0;
+  text-shadow: 1px 1px 2px black;
 }
 
 .perfil p {
-  color: #6c757d; 
-  font-style: italic; 
+  color: #ffffff; 
+  font-style: italic;
+  font-weight: bold; 
   margin-top: 5px; 
+  text-shadow: 1px 1px 2px black;
 }
 /* Estilização das Seções */
 .secao {
-  background-color: #ffffff; 
+  background-color: #c0ccf5; 
   padding: 20px; 
   margin: 20px; 
   border-left: 5px solid #4A90E2; 
@@ -50,6 +57,7 @@ body {
   color: #4A90E2; 
   margin-top: 0; 
   text-align: center;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 .secao p {
@@ -59,6 +67,8 @@ body {
 .secao ul {
   list-style-type: none; 
   padding: 0;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .secao a {
@@ -67,17 +77,34 @@ body {
 }
 
 .secao li {
-  background-color: #e2eafc;
+  font-weight: bold;
+  background-image: linear-gradient(#0000ff80, #05cef180);
   margin-bottom: 5px; 
   padding: 8px 12px; 
   border-radius: 5px; 
   text-align: center;
+  cursor: pointer;
+  transition: background-image 0.5s ease, transform 0.5s ease;
+  box-shadow: 10px 5px 5px #000000;
 }
+
+.secao li:hover {
+  background-image: linear-gradient(#3b3bf880, #41defa80);
+  transform: scale(1.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 16px;
+}
+
 
 .contato {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 16px;
 }
 
 .contato p {
