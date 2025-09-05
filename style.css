@@ -1,0 +1,85 @@
+/* Estilização Geral do Corpo */
+body {
+  font-family: Arial, sans-serif; 
+  background-color: #e9ecef; 
+  line-height: 1.6; 
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Estilização do Perfil */
+.perfil {
+  background-color: #ffffff; 
+  padding: 30px 20px; 
+  margin: 20px; 
+  text-align: center; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.perfil img {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  border: 3px solid #4A90E2; 
+  border-radius: 50%;
+  margin-bottom: 10px; 
+}
+
+.perfil h1 {
+  color: #333; 
+  font-size: 2em;
+  margin: 0;
+}
+
+.perfil p {
+  color: #6c757d; 
+  font-style: italic; 
+  margin-top: 5px; 
+}
+/* Estilização das Seções */
+.secao {
+  background-color: #ffffff; 
+  padding: 20px; 
+  margin: 20px; 
+  border-left: 5px solid #4A90E2; 
+  border-radius: 5px; 
+}
+
+.secao h2 {
+  color: #4A90E2; 
+  margin-top: 0; 
+  text-align: center;
+}
+
+.secao p {
+  text-align: center;
+}
+
+.secao ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.secao a {
+  text-decoration: none;
+  color: #333; 
+}
+
+.secao li {
+  background-color: #e2eafc;
+  margin-bottom: 5px; 
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  text-align: center;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato p {
+  margin-left: 24px;
+}
